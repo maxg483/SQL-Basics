@@ -1,0 +1,22 @@
+create table products (id integer primary key, product text, stock INTEGER, supplier_cost integer, selling_cost integer); 
+
+insert into products values (1, "zinnias", 15, 2, 3.5);
+insert into products values (2, "carnations", 15, 1, 2);
+insert into products values (3, "sunflowers", 10, 4, 6);
+insert into products values (4, "roses", 25, 4, 7);
+insert into products values (5, "chrysanthemums", 8, 6, 8);
+insert into products values (6, "plumeria", 12, 5, 6);
+insert into products values (7, "opuntia", 5, 8, 10);
+insert into products values (8, "magnolia", 5, 8, 11);
+insert into products values (9, "coneflower", 15, 4, 5);
+insert into products values (10, "marigolds", 15, 3, 5);
+insert into products values (11, "apple blossoms", 10, 4, 6);
+insert into products values (12, "baby's breath", 20, 1, 1.50);
+insert into products values (13, "cattail", 10, 4, 6);
+insert into products values (14, "fishtail palm", 12, 3, 5);
+insert into products values (15, "palm branch", 16, 2, 4);
+
+
+select * from products order by selling_cost;
+select sum(stock) from products order by supplier_cost;
+
